@@ -71,6 +71,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 .img-background {
@@ -100,7 +101,7 @@ main {
 }
 
 .principal {
-    z-index: 100;
+    z-index: 2;
     position: relative;
     margin-top: -100px;
     display: flex;
@@ -362,3 +363,18 @@ input:checked+.slider:before {
     visibility: visible;
     border: 1px solid #ccc;
 }
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 450px) {}
